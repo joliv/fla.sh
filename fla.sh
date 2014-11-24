@@ -14,7 +14,7 @@ play ()
 		cat "$CARD"
 		echo "Did you get it? [Y/n]"
 		read ANS
-		if [ $ANS != "n" ] && [ $ANS != "N" ]
+		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]
 		then
 			mv "$CARD" ".$CARD"
 		fi
