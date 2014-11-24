@@ -1,13 +1,9 @@
 #!/bin/bash
-
 set -e
-
 IFS=$'\n'
 
-play ()
-{
+play () {
 	for CARD in $(ls | shuf); do
-		echo "Prompt:"
 		echo "$CARD"
 		read
 		echo "Answer:"
@@ -21,24 +17,21 @@ play ()
 	done
 }
 
-learn ()
-{
+learn () {
 	shift
 	for F in $@; do
 		mv "$F" ".$F"
 	done
 }
 
-forget ()
-{
+forget () {
 	shift
 	for F in $@; do
 		mv "$F" "${F:1}"
 	done
 }
 
-helptxt ()
-{
+helptxt () {
 	echo "Help text [TODO]"
 }
 
