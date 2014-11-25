@@ -8,7 +8,7 @@ play () {
 		read
 		echo "Answer:"
 		cat "$CARD"
-		echo "Did you get it? [Y/n]"
+		echo "Got it? [Y/n]"
 		read ANS
 		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]
 		then
