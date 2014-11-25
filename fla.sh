@@ -7,7 +7,6 @@ case "$1" in
 	for CARD in $(ls | shuf); do
 		echo "$CARD"
 		read
-		echo "Answer:"
 		cat "$CARD"
 		echo "Got it? [Y/n]"
 		read ANS
