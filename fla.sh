@@ -31,4 +31,3 @@ forget)
 	echo "  $CMD learn  <file...>"
 	echo "  $CMD forget <file...>"
 esac
-
