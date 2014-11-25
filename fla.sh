@@ -10,8 +10,7 @@ case "$1" in
 		cat "$CARD"
 		echo "Got it? [Y/n]"
 		read ANS
-		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]
-		then
+		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]; then
 			mv "$CARD" ".$CARD"
 		fi
 	done;;
