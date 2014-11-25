@@ -32,7 +32,11 @@ forget () {
 }
 
 helptxt () {
-	echo "Help text [TODO]"
+	CMD=`basename $0`
+	echo "Usage:"
+	echo "  $CMD"
+	echo "  $CMD learn  <file...>"
+	echo "  $CMD forget <file...>"
 }
 
 case "$1" in
