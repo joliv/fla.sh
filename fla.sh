@@ -2,7 +2,8 @@
 set -e
 IFS=$'\n'
 
-play () {
+case "$1" in
+"")
 	for CARD in $(ls | shuf); do
 		echo "$CARD"
 		read
@@ -14,35 +15,22 @@ play () {
 		then
 			mv "$CARD" ".$CARD"
 		fi
-	done
-}
-
-learn () {
+	done;;
+learn)
 	shift
 	for F in $@; do
 		mv "$F" ".$F"
-	done
-}
-
-forget () {
+	done;;
+forget)
 	shift
 	for F in $@; do
 		mv "$F" "${F:1}"
-	done
-}
-
-helptxt () {
+	done;;
+*)
 	CMD=`basename $0`
 	echo "Usage:"
 	echo "  $CMD"
 	echo "  $CMD learn  <file...>"
 	echo "  $CMD forget <file...>"
-}
-
-case "$1" in
-	"")	play;;
-	learn)	learn "$@";;
-	forget)	forget "$@";;
-	*)	helptxt;;
 esac
 
