@@ -3,7 +3,7 @@ set -e
 IFS=$'\n'
 
 case "$1" in
-"")
+"")	while ls * 1> /dev/null 2>&1; do
 	for CARD in $(ls | shuf); do
 		echo "$CARD"
 		read
@@ -13,7 +13,7 @@ case "$1" in
 		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]; then
 			mv "$CARD" ".$CARD"
 		fi
-	done;;
+	done;done;;
 learn)
 	shift
 	for F in $@; do
