@@ -33,6 +33,7 @@ forget)
 	CMD=`basename $0`
 	echo "Usage:"
 	echo "  $CMD"
+	echo "  $CMD write"
 	echo "  $CMD learn  <file...>"
 	echo "  $CMD forget <file...>"
 esac
