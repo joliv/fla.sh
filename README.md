@@ -10,7 +10,7 @@ Files can be "learned" or "forgotten" (hidden and unhidden) in bulk outside of i
 
 Ah, glad you asked! I've tried many flashcard systems, and automatic answer checking just adds too many hassles. Some answers are cumbersome to type out, silly typos will get reported as wrong answers, and some questions can't simply be answered in a short string of text.
 
-
+![](http://s8.postimg.org/59hgo6cvp/demo.gif)
 
 ```
 Usage:
