@@ -1,4 +1,4 @@
-#### fla.sh
+### fla.sh
 
 ##### Paper-light flashcards in under 40 lines of bash.
 
