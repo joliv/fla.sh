@@ -5,11 +5,9 @@ IFS=$'\n'
 case "$1" in
 "")	while ls * 1> /dev/null 2>&1; do
 	for CARD in $(ls | shuf); do
-		echo "$CARD"
-		read
+		read -p "$CARD"
 		cat "$CARD"
-		echo "Got it? [Y/n]"
-		read ANS
+		read -p "Got it? [Y/n] " ANS
 		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]; then
 			mv "$CARD" ".$CARD"
 		fi
