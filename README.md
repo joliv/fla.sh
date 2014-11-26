@@ -15,6 +15,7 @@ Ah, glad you asked! I've tried many flashcard systems, and automatic answer chec
 ```
 Usage:
   fla.sh
+  fla.sh write
   fla.sh learn  <file...>
   fla.sh forget <file...>
 ```
