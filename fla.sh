@@ -13,6 +13,12 @@ case "$1" in
 			mv "$CARD" ".$CARD"
 		fi
 	done;done;;
+write)
+	while true; do
+		read -p "Prompt: " PROMPT
+		read -p "Answer: " ANSWER
+		echo "$ANSWER" > "$PROMPT"
+	done;;
 learn)
 	shift
 	for F in $@; do
