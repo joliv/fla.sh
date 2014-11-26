@@ -4,7 +4,7 @@
 
 Flashcards are [simply files](http://en.wikipedia.org/wiki/Everything_is_a_file) with their filename as the prompt and their contents as the answer. When cards are learned, they are hidden and a `.` is prepended to the filename.
 
-Files can be "learned" or "forgotten" (hidden and unhidden) outside of interactive mode with the `learn` and `forget` commands.
+Files can be "learned" or "forgotten" (hidden and unhidden) in bulk outside of interactive mode with the `learn` and `forget` commands.
 
 *How come you have the user check their answers? Wouldn't it just be a simple equality check?*
 
