@@ -8,7 +8,8 @@ case "$1" in
 	for CARD in $(ls | shuf); do
 		read -p "$CARD"
 		cat "$CARD"
-		read -p "Got it? [Y/n] " ANS
+		read -p "Got it? [Y/n] " -n 1 ANS
+		echo
 		if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]; then
 			mv "$CARD" ".$CARD"
 		fi
