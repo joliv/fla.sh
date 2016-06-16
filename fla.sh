@@ -27,8 +27,10 @@ learn)
 	done;;
 forget)
 	shift
-	for F in $@; do
-		mv "$F" "${F:1}"
+        for F in $@ .[^.]*; do
+                if [[ $F == .* ]];then
+                        mv "$F" "${F:1}"
+                fi
 	done;;
 *)
 	CMD=`basename $0`
