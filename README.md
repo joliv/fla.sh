@@ -19,3 +19,5 @@ Usage:
   fla.sh learn  <file...>
   fla.sh forget <file...>
 ```
+
+This script depends on GNU `shuf`, which comes bundled on any sane Linux distro, but not on OSX. You can install it through [Homebrew](http://brew.sh) with `brew install coreutils`, but then `shuf` will be installed as `gshuf`, so you'll need to either alias it (`alias shuf='gshuf'`) or edit the script locally to change the `shuf` call to `gshuf`.
